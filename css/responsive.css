@@ -1,0 +1,153 @@
+@media(max-width:1200px){
+    .we-are h2{
+        font-size: 40px;
+        margin-top: 50px;
+    }
+    .person{
+        height: 190px;
+        width: 190px;
+    }
+    .team-member h5{
+        margin-top: 25px;
+        font-size: 18px;
+    }
+    .team-member h5 .fa-user,
+    .team-member p .fa-phone,
+    .team-member p .fa-facebook{
+        margin-right: 8px;
+    }
+}
+
+
+
+@media (max-width:991.98px){
+    .menu-bar .menu ul{
+        display: block;
+    }
+    .menu-bar .menu ul li{
+        margin-top: 30px;
+    }
+    .menu{
+        display: flex;
+       position: fixed;
+       padding-left: 30px;
+       top: 0px;
+        justify-content: space-between;
+        width: 240px;
+        right: 0;
+        background-color:hsla(180, 80%, 80%, 0.08) ;
+        height: 100%;
+        border-left: 2px solid var(--first-color-gray);
+        backdrop-filter: blur(32px);
+        --webkit-backdrop-filter: blur(32px);       
+        transition: all 0.3s ease ;
+        z-index: 100;
+        transform: translateX(100%);
+    }
+    .menu-bar .show{
+        transform: translateX(0%);
+    }
+    
+    .we-are h2{
+        font-size: 30px;
+        margin-top: 35px;
+       
+    }
+    .we-are p{
+        font-size: 18px;
+        
+    }
+    .we-are h4{
+        font-size: 22px;
+    }
+
+    .member .our{
+        font-size: 22px;
+        letter-spacing: 4px;
+    }
+    .member .team{
+        font-size: 38px;
+    }
+    .person{
+        height: 140px;
+        width: 140px;
+    }
+    .team-member h5{
+        margin-top: 15px;
+        font-size: 15px;
+    }
+    .team-member h5 .fa-user,
+    .team-member p .fa-phone,
+    .team-member p .fa-facebook{
+        margin-right: 6px;
+    }
+    .team-member p .fa-phone{
+        font-size: 14px;
+    }
+    .team-member p .fa-facebook{
+        font-size: 18px;
+    }
+    .team-member p a{
+        font-size: 13px;
+    }
+
+}
+@media(max-width:767.98px){
+    .bg .order{
+        order: 1;
+    }
+    .menu-bar .nav-toggoler{
+        top: 15px;
+    }
+    .person{
+        height: 170px;
+        width: 170px;
+    }
+    .team-member h5{        
+        font-size: 18px;
+    }
+    .team-member h5 .fa-user,
+    .team-member p .fa-phone,
+    .team-member p .fa-facebook{
+        margin-right: 8px;
+    }
+    .team-member p .fa-phone{
+        font-size: 15px;
+    }
+    .team-member p .fa-facebook{
+        font-size: 19px;
+    }
+    .team-member p a{
+        font-size: 15px;
+    }
+    .view{
+        padding: 10px;
+    }
+}
+
+@media(max-width:575.98px){
+    .member .team{
+        font-size: 35px;
+    }
+    .person{
+        height: 200px;
+        width: 200px;
+    }
+    .team-member h5{        
+        font-size: 20px;
+    }
+    .team-member h5 .fa-user,
+    .team-member p .fa-phone,
+    .team-member p .fa-facebook{
+        margin-right: 10px;
+    }
+    .team-member p .fa-phone{
+        font-size: 16px;
+    }
+    .team-member p .fa-facebook{
+        font-size: 20px;
+    }
+    .team-member p a{
+        font-size: 18px;
+    }
+}

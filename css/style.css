@@ -1,0 +1,413 @@
+
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Red+Hat+Display:wght@400;700;900&display=swap");
+
+:root{
+    scroll-behavior: auto;
+
+     /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --first-color: hsl(79, 72%, 55%);
+  --first-color-light: hsl(79, 97%, 77%);
+  --first-color-alt: hsl(79, 67%, 52%);
+  --first-color-dark: hsl(79, 63%, 50%);
+  --first-color-gray: hsl(79, 6%, 64%);
+  --title-color: hsl(180, 4%, 98%);
+  --title-color-black: hsl(180, 4%, 12%);
+  --text-color: hsl(180, 4%, 72%);
+  --text-color-light: hsl(180, 4%, 65%);
+  --body-color: hsl(180, 12%, 8%);
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif; /*for font-family*/
+    overflow-x: hidden;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a{text-decoration: none;}
+/* ================ header =================== */
+
+.stiky .top-bar{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: aqua;
+    z-index: 100;    
+}
+
+.top-bar{
+    padding-top: 5px;
+    background-color: aqua;
+}
+.menu-bar .menu ul li.active a{
+    color: darkgoldenrod;
+}
+.top-bar .logo img{
+    width: 40%;
+}
+.menu-bar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.menu-bar .menu ul{
+    display: flex; 
+}
+
+.menu-bar .menu ul li{
+    margin-left: 40px;
+
+}
+.menu-bar .menu ul li a{
+    color: black;
+    font-weight: 500;
+    font-size: large;
+}
+.menu-bar .menu ul li a:hover{
+    color: darkgoldenrod;
+    border-bottom: 1px solid #000;   
+}
+/* ---nav toggoler----- */
+.menu-bar .nav-toggoler{
+    position: fixed;
+    top: 20px;
+    left: -40px;
+    border: 1px solid black;
+    font-size: 22px;
+    height: 27px;
+    width: 27px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF4E9;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    
+}
+.nav-toggoler .fa-xmark::after{
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 10px;
+    background-color: #FFF4E9;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    right: 0;
+    top: 50%;
+    transform: translate(55%,-50%) rotate(45deg);
+   
+}
+
+
+ /* ============ home section  ========================== */
+
+ /* ===========slider area start ===========================*/
+
+.stiky .slider{
+    padding-top: 150px;
+}
+.slider{
+    position: relative;
+   
+}
+.slider-item{
+    position: relative;
+    text-align: center;
+}
+.slider-item:after{
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.1 );
+    z-index: 1;
+}
+.slider-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+}
+.para1{
+    color: white;
+    font-weight: 300;
+    font-size: 13px;
+}
+.slider-content h2{
+    text-transform: uppercase;
+    color: white;
+    margin-top: -6px;
+}
+.para2{
+    color: white;
+    font-size: 14px;
+    margin: 17px 0 55px;
+}
+
+
+        /* =======slider bullet part */
+.our-bullet{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    z-index: 4;
+}
+.our-bullet li{
+    height: 8px !important;
+    width: 8px !important;
+    background-color: #414141;
+     margin: 0 5px;
+   border: 2px solid #a6a6a6 !important;
+     
+}
+.our-bullet li.active{
+    border: 2px solid #a6a6a6;
+}
+        /* =======slider bullet part */
+        /* =======slider arrow part */
+.slider-arrow .left-arrow a,
+.slider-arrow .right-arrow a {
+    position: absolute;
+   text-decoration: none;
+   top: 50%;
+   font-size: 20px;
+   transform: translateY(-50%);
+   color: black;
+   height: 40px;
+   width: 40px;
+   border-radius: 20px;
+   background-color: aqua;
+   z-index: 4;
+   transition: .3s;
+   text-align: center;
+}
+.slider-arrow .left-arrow a{
+    left: 55px;
+}
+.slider-arrow .right-arrow a{
+    right: 55px;
+}
+.slider-arrow .left-arrow a:hover,
+.slider-arrow .right-arrow a:hover{
+    background-color: white;
+    color: #4caf50;
+}
+.slider-arrow .left-arrow a i,
+.slider-arrow .right-arrow a i{
+    margin-top: 10px;
+} 
+       /* =======slider arrow part */
+/* ===========slider area end ===========================*/
+
+/* ===========Friends and Family + what we do ===========================*/
+
+.friends img{
+    width: 100%;
+}
+
+.bg{
+    background-color: #d2eaff;
+    
+}
+.we-are h2{
+    font-weight: 600;
+    font-size: 45px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+.we-are .color{
+    color: blueviolet;
+}
+.we-are p{
+    font-size: 20px;
+    
+}
+.we-are .s-color{
+    color: darkorchid;
+}
+.we-are h4{
+        color: darkorchid;
+    }
+/* ======================================== */
+
+/* =============== team member ========================= */
+
+.our-member{
+    background-color: #FFF4E9;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.member{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.member .our{
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: #1f5abc;
+}
+.member .team{
+    font-size: 50px;
+    font-weight: bold;
+    margin-left: 10px;
+    color: #1f5abc;
+}
+
+.team-member{
+    text-align: center;
+    border: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    margin-bottom: 20px;
+    padding-top: 15px;
+}
+    
+.person{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+
+}
+.team-member h5{
+   
+    margin-top: 30px;
+    color: #593515;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.team-member h5 .fa-user{
+    margin-right: 10px;
+    color: #593515;
+}
+.team-member p .fa-phone{
+    margin-right: 10px;
+    font-size: 16px;
+    color: #593515;
+}
+.team-member p .fa-facebook{
+    margin-right: 10px;
+    font-size: 20px;
+    color: #593515;
+    
+}
+.margin{
+    margin-top: -12px;
+}
+ .view{
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    background-color: #0D2969;
+    color: white;
+    padding: 12px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* =========================================================================== */
+
+/* =========== footer area start===================== */
+.big-footer{
+    background-color: #02134D;
+    padding: 40px 0;
+    color: wheat;
+    position: relative;
+    z-index: 1;
+}
+.big-footer::before{
+    content: '';
+    position: absolute;
+    background: url("../images/footer-shape1.png");
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    animation: imgchange1 2s linear infinite;
+}
+@keyframes imgchange1 {
+    0% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+}
+.big-footer::after{
+    content: '';
+    position: absolute;
+    background: url("../images/footer-shape2.png");
+    background-position: center center;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    animation: imgchange2 2s linear infinite;
+}
+
+@keyframes imgchange2 {
+    0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+}
+.big-footer h4{
+    margin-bottom: 15px;
+}
+.big-footer .links ul{
+    padding-left: 20px;
+}
+.big-footer .links ul li a{
+    text-decoration: none;
+    color: wheat;
+}
+.big-footer .follow-us a{
+    text-decoration: none;
+    display: block;
+    color: wheat;
+}
+.big-footer .follow-us a i{
+   margin-right: 10px; 
+}
+.big-footer hr{
+    display: none;
+}
+  /* ============== small footer ============ */
+.small-footer{
+    background-color: #16265a;
+    text-align: center;
+    color: white;
+}
+.small-footer p{
+    font-size: 17px;
+    padding: 10px 0;
+}
+/* =========== footer area end===================== */
