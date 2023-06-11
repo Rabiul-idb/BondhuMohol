@@ -1,4 +1,16 @@
+@media(max-width:1400px){
+    .stiky .news{
+        top: 73px;
+    } 
+    .menu-bar .search{
+        right: 44%;
+    }  
+}
+
 @media(max-width:1200px){
+    .menu-bar .search{
+        right: 53%;
+    } 
     .we-are h2{
         font-size: 40px;
         margin-top: 50px;
@@ -15,8 +27,12 @@
     .team-member p .fa-phone,
     .team-member p .fa-facebook{
         margin-right: 8px;
-    }
+    } 
+    .stiky .news{
+        top: 55px;
+    }   
 }
+
 
 
 
@@ -41,13 +57,20 @@
         backdrop-filter: blur(32px);
         --webkit-backdrop-filter: blur(32px);       
         transition: all 0.3s ease ;
-        z-index: 100;
+        z-index: 105;
         transform: translateX(100%);
     }
     .menu-bar .show{
         transform: translateX(0%);
     }
+
+    .stiky .news{
+        top: 75px;
+    }   
     
+    .menu-bar .search{
+        display: none;
+    }
     .we-are h2{
         font-size: 30px;
         margin-top: 35px;
@@ -99,6 +122,23 @@
     .menu-bar .nav-toggoler{
         top: 15px;
     }
+    .stiky .news{
+        top: 57px;
+    } 
+    
+    .slider-arrow .left-arrow a,
+    .slider-arrow .right-arrow a{
+    background-color: transparent;
+    }
+    .our-bullet li{
+        height: 5px !important;
+        width: 5px !important;        
+        border: 1px solid #a6a6a6 !important;
+        
+    }
+    .our-bullet li.active{
+    border: 1px solid #a6a6a6;
+    }
     .person{
         height: 170px;
         width: 170px;
@@ -129,6 +169,9 @@
     .member .team{
         font-size: 35px;
     }
+    .stiky .news{
+        top: 50px;
+    }  
     .person{
         height: 200px;
         width: 200px;
@@ -150,4 +193,5 @@
     .team-member p a{
         font-size: 18px;
     }
+
 }
